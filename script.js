@@ -16,5 +16,9 @@ function hideSideBar(){
 
 
 
-
-  
+// Add event listeners to menu items
+document.querySelectorAll('.my-menu-class a').forEach(item => {
+    item.addEventListener('click', () => {
+        hideSideBar();
+    });
+});
